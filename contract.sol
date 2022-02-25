@@ -25,7 +25,7 @@ contract Greeter {
     return greeting;
   }
   
-  function getCount() view public returns (uint memory) {
+  function getCount() view public returns (uint) {
     return count;
   }
 }
