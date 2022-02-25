@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: GPL-3.0
 pragma solidity ^0.8.0;
 
 contract Greeter {
@@ -6,18 +7,18 @@ contract Greeter {
   string public studentNumber;
   uint public count;
   
-  constructor() public {
-    name = 'tomas wilkinson';
-    studentNumber = '10033089';
-    greeting = 'Hello from the contract deployed be ' + name + ' with student number ' + studentNumber ';
+  constructor() {
+    name = "tomas wilkinson";
+    studentNumber = "10033089";
+    greeting = string(abi.encodePacked("Hello from the contract deployed by ",name," with student number ",studentNumber));
     count = 0;
   }
 
   function setGreeting(string memory _name, string memory _studentNumber) public {
     name = _name;
     studentNumber = _studentNumber;
-    greeting = 'Hello from the contract deployed be ' + name + ' with student number ' + studentNumber ';
-    count++
+    greeting = string(abi.encodePacked("Hello from the contract deployed by ",name," with student number ",studentNumber));
+    count++;
   }
 
   function greet() view public returns (string memory) {
