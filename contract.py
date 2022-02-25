@@ -6,7 +6,7 @@ from web3.auto import w3
 from web3.providers.websocket import WebsocketProvider
 from web3 import Web3
 from solc import compile_standard
-print ("Hello from the contract deployed by Tomas Wilkinson  with student number 10033089,import successful")
+print ("Hello world,import successful")
 with open("contract.sol") as c:
  contractText=c.read()
 with open(".pk") as pkfile:
