@@ -8,7 +8,7 @@ contract Greeter {
   uint public count;
   
   constructor() {
-    name = "tomas wilkinson";
+    name = "Tomas Wilkinson";
     studentNumber = "10033089";
     greeting = string(abi.encodePacked("Hello from the contract deployed by ",name," with student number ",studentNumber));
     count = 0;
