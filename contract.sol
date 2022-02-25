@@ -24,4 +24,8 @@ contract Greeter {
   function greet() view public returns (string memory) {
     return greeting;
   }
+  
+  function getCount() view public returns (uint memory) {
+    return count;
+  }
 }
